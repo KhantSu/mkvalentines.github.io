@@ -1,0 +1,16 @@
+.heart svg{
+  width:100%;
+}
+
+.name-wrap{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.names
+{
+  flex:1;
+}
