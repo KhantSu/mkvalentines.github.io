@@ -14,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 
 
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <!-- Bootstrap and Custom CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -25,7 +29,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+    <div class="container-fluid container-navbar">
       <a class="navbar-brand" href="#"><img src="img/m&k_logo.png" alt="" width="130"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,7 +128,7 @@
         </div>
       </div>
 
-      <div class="col col-lg-6 col-sm-12 person2">
+      <div class="col-lg-6 col-12 person2">
 
         <div class="photo2">
           <img src="img/baby1.jpg" width="100px">
@@ -176,7 +180,7 @@
     </div>
   </div>
 
-  <div class="day_counter">
+  <div class="container-fluid day_counter">
     <h1>We've been together for</h1>
 
     <div class="counter_days">
@@ -184,17 +188,20 @@
       </p>
     </div>
 
-    <div class="counter_person">
-      <span class="person">
-        <img src='img/coco.jpg' width='150px' />
-      </span>
-      <span>
-        <img src='img/favourite.png' />
-      </span>
-      <span class="person">
-        <img src='img/baby1.jpg' width="150px" />
-      </span>
+    <div class="row">
+      <div class="col counter_person">
+        <span class="counter-span person">
+          <img src='img/coco.jpg' />
+        </span>
+        <span class="counter-span">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="counter-span person">
+          <img src='img/baby1.jpg' />
+        </span>
+      </div>
     </div>
+
 
     <div class="counter_seconds">
       <p class="seconds">
@@ -204,15 +211,12 @@
 
 
   <!-- Open When section starts -->
-  <div class="open_when" id="open_when">
-    <!-- <h1 class="open_when_header">
-         <img src="img/love.png" width="50px"/>
-         Open Me Darling
-         <img src="img/love.png" width="50px"/>
-       </h1> -->
-    <div class="container">
+  <div class="container-fluid open_when" id="open_when">
+    <h1>Open When</h1>
+
+    <div class="row">
       <!--Envelope and Popup 1 starts-->
-      <span class="box row1" id="e1">
+      <div class="col-lg-4 col-md-4 col-12  box row1" id="e1">
         <div class="mail_wrapper">
           <div class="mail">
             <div class="cover">
@@ -222,17 +226,17 @@
               <h1>Need a laugh Darling?</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open When You Need a laugh<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You Need a laugh<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e1" class="open" onclick="show('popup1')">Open Now</a>
         </div>
-      </span>
+      </div>
       <div class="popup" id="popup1">
         <img src="img/us7_sq.jpeg" width="250px" />
         <h2>Joke joke</h2>
@@ -250,7 +254,7 @@
       <!-- Envelope and Popup 1 Ends-->
 
       <!--Envelope and Popup 2 starts-->
-      <span class="box row1" id="e2">
+      <span class="col box row1" id="e2">
         <div class="mail_wrapper">
           <div class="mail">
             <div class="cover">
@@ -261,12 +265,12 @@
             </div>
           </div>
 
+          <div class="message-header">
+            <p>Open When You're Missing Me<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You're Missing Me<br />(hover the envelope first)</p>
-        </div>
         <div class="btn_read">
           <a href="#e2" class="open" onclick="show('popup2')">Open Now</a>
         </div>
@@ -276,7 +280,7 @@
         <h2>Always by your side</h2>
         <p>
           <!--These are totally hard days for our country and the political issues made us
-            devastating.--> These days, all the situation leads me missing you more and more darling.
+        devastating.--> These days, all the situation leads me missing you more and more darling.
           I always feels like a baby whenever I'm in your arms and don't want to stop it.
           I miss you so bad and need you so much too. If you're missing me, you can talk to me
           whenever you want to. I'll be always there for you.
@@ -287,7 +291,7 @@
       <!-- Envelope and Popup 2 Ends-->
 
       <!--Envelope and Popup 3 starts-->
-      <span class="box row1" id="e3">
+      <span class="col box row1" id="e3">
         <div class="mail_wrapper">
           <div class="mail">
             <div class="cover">
@@ -298,12 +302,12 @@
             </div>
           </div>
 
-
+          <div class="message-header">
+            <p>Open When You Have Great Day(hover the envelope first)</p>
+          </div>
         </div>
 
-        <div class="message-header">
-          <p>Open When You Have Great Day(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e3" class="open" onclick="show('popup3')">Open Now</a>
         </div>
@@ -319,26 +323,29 @@
         <a href="#e3" onclick="hide('popup3')">Close</a>
       </div>
       <!-- Envelope and Popup 3 Ends-->
+    </div>
 
+
+    <div class="row">
 
       <!--Envelope and Popup 4 starts-->
-      <span class="box" id="e4">
+      <span class="col box" id="e4">
         <div class="mail_wrapper">
-          <div class="mail-row2">
-            <div class="cover-row2">
+          <div class="mail mail-row2">
+            <div class="cover cover-row2">
 
             </div>
             <div class="letter">
               <h1>Are you feeling down?</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open When You feel down<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You feel down<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e4" class="open" onclick="show('popup4')">Open Now</a>
         </div>
@@ -359,10 +366,10 @@
 
 
       <!--Envelope and Popup 5 starts-->
-      <span class="box" id="e5">
+      <span class="col box" id="e5">
         <div class="mail_wrapper">
-          <div class="mail-row2">
-            <div class="cover-row2">
+          <div class="mail mail-row2">
+            <div class="cover cover-row2">
 
             </div>
             <div class="letter">
@@ -370,12 +377,12 @@
             </div>
           </div>
 
-
+          <div class="message-header">
+            <p>Open Now<br />(hover the envelope first)</p>
+          </div>
         </div>
 
-        <div class="message-header">
-          <p>Open Now<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e5" class="open" onclick="show('popup5')">READ ME</a>
         </div>
@@ -396,23 +403,23 @@
 
 
       <!--Envelope and Popup 6 starts-->
-      <span class="box" id="e6">
+      <span class="col box" id="e6">
         <div class="mail_wrapper">
-          <div class="mail-row2">
-            <div class="cover-row2">
+          <div class="mail mail-row2">
+            <div class="cover cover-row2">
 
             </div>
             <div class="letter">
               <h1>Wanna buy something?</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open When You Want to buy smth<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You Want to buy smth<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e6" class="open" onclick="show('popup6')">Open Now</a>
         </div>
@@ -430,26 +437,29 @@
         <a href="#e6" onclick="hide('popup6')">Close</a>
       </div>
       <!-- Envelope and Popup 6 Ends-->
+    </div>
 
+
+    <div class="row">
 
       <!--Envelope and Popup 7 starts-->
-      <span class="box" id="e7">
+      <span class="col box" id="e7">
         <div class="mail_wrapper">
-          <div class="mail-row3">
-            <div class="cover-row3">
+          <div class="mail mail-row3">
+            <div class="cover cover-row3">
 
             </div>
             <div class="letter">
               <h1>XOXO</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open When You Need My Kiss<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You Need My Kiss<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e7" class="open" onclick="show('popup7')">Open Now</a>
         </div>
@@ -488,23 +498,23 @@
 
 
       <!--Envelope and Popup 8 starts-->
-      <span class="box" id="e8">
+      <span class="col box" id="e8">
         <div class="mail_wrapper">
-          <div class="mail-row3">
-            <div class="cover-row3">
+          <div class="mail mail-row3">
+            <div class="cover cover-row3">
 
             </div>
             <div class="letter">
               <h1>Are You Feeling Angry?</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open When You're Angry <br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open When You're Angry <br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e8" class="open" onclick="show('popup8')">Open Now</a>
         </div>
@@ -524,23 +534,23 @@
 
 
       <!--Envelope and Popup 9 starts-->
-      <span class="box" id="e9">
+      <span class="col box" id="e9">
         <div class="mail_wrapper">
-          <div class="mail-row3">
-            <div class="cover-row3">
+          <div class="mail mail-row3">
+            <div class="cover cover-row3">
 
             </div>
             <div class="letter">
               <h1>Wishing You A Very Special Day</h1>
             </div>
           </div>
-
+          <div class="message-header">
+            <p>Open On Your Birthday<br />(hover the envelope first)</p>
+          </div>
 
         </div>
 
-        <div class="message-header">
-          <p>Open On Your Birthday<br />(hover the envelope first)</p>
-        </div>
+
         <div class="btn_read">
           <a href="#e9" class="open" onclick="show('popup9')">Open Now</a>
         </div>
@@ -558,135 +568,140 @@
       <!-- Envelope and Popup 9 Ends-->
 
     </div>
+    <!--Open When section ends-->
   </div>
-  <div style="clear: both; float: none"></div>
-  <!--Open When section ends-->
 
 
 
   <!--Song and Quotes Section Starts-->
-  <div class="songs_container" id="for_u">
+  <div class="container-fluid songs_container" id="for_u">
     <h1 class="songs_header">
       <img src='img/music-notes.png' width="50px" />
       Songs for you
       <img src='img/music-notes.png' width="50px" />
     </h1>
 
-    <div class="song">
 
-      <div class="imgBx">
-        <img src="img/kiss me.jpg" width="250px" height="323.52px" />
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 song">
+
+        <div class="imgBx">
+          <img class="song-img" src="img/kiss me.jpg" width="250px" height="323.52px" />
+        </div>
+
+        <audio controls>
+          <source src="songs/Ed Sheeran- Kiss Me.mp3" type="audio/mp3">
+          <label>Ed Sheeran - Kiss Me</label>
+
+          Your browser does not support the audio element.
+        </audio>
       </div>
 
-      <audio controls>
-        <source src="songs/Ed Sheeran- Kiss Me.mp3" type="audio/mp3">
-        <label>Ed Sheeran - Kiss Me</label>
+      <div class="col-lg-4 col-md-6 col-12 song">
 
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+        <div class="imgBx">
+          <img class="song-img" src="img/all_of_me.png" width="250px" />
+        </div>
 
-    <div class="song">
-
-      <div class="imgBx">
-        <img src="img/all_of_me.png" width="250px" />
+        <audio controls>
+          <source src="songs/John Legend - All of Me.mp3" type="audio/mp3">
+          <label>John Legend - All of Me</label>
+          Your browser does not support the audio element.
+        </audio>
       </div>
 
-      <audio controls>
-        <source src="songs/John Legend - All of Me.mp3" type="audio/mp3">
-        <label>John Legend - All of Me</label>
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+      <div class="col-lg-4 col-md-6 col-12 song">
 
-    <div class="song">
+        <div class="imgBx">
+          <img class="song-img" src="img/westlife.jpg" width="250px" height="323.52px" />
+        </div>
 
-      <div class="imgBx">
-        <img src="img/westlife.jpg" width="250px" height="323.52px" />
+        <audio controls>
+          <source src="songs/Westlife - When You Tell Me That You Love Me.mp3" type="audio/mp3">
+          <label>Westlife - When You Tell Me That You Love Me</label>
+          Your browser does not support the audio element.
+        </audio>
       </div>
-
-      <audio controls>
-        <source src="songs/Westlife - When You Tell Me That You Love Me.mp3" type="audio/mp3">
-        <label>Westlife - When You Tell Me That You Love Me</label>
-        Your browser does not support the audio element.
-      </audio>
     </div>
+
 
   </div>
-  <div style="clear: both; float: none"></div><br />
 
-  <div class="quotes_container">
-    <div class="quotes_box">
+  <div class="container-fluid quotes_container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 quotes_box">
 
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>Complete puzzles</h2>
-      <p>Although there's difficulties and inconvienes, we complete each other with
-        love and compassion.</p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>Complete puzzles</h2>
+        <p>Although there's difficulties and inconvienes, we complete each other with
+          love and compassion.</p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
 
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 quotes_box">
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>Unicorn power</h2>
+        <p>No one is you and that's your super power.</p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 quotes_box">
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>Research and Development</h2>
+        <p>Understanding you seems to be complicated but it's a lovely simple riddle.</p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 quotes_box">
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>My Second Half</h2>
+        <p>The more I know you, the more I trust you with from the bottom of my heart</p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 quotes_box">
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>Award Winner</h2>
+        <p>Best Boyfriend Award goes to Coco MTK! Yayy!!
+          <br />
+          Thank you for your gentleness, love, kindness and care. Coco is a superman
+          for baby.
+        </p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
+
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 quotes_box">
+        <p>
+          <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
+        <h2>Hamburger Motivation</h2>
+        <p>Success = a thing that can give you a hamburger everyday.<br />
+          (If you want to eat burger everyday, you must achieve your goals</p>
+        <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
+        </p>
+
+      </div>
     </div>
 
-
-    <div class="quotes_box">
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>Unicorn power</h2>
-      <p>No one is you and that's your super power.</p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
-
-    </div>
-
-
-    <div class="quotes_box">
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>Research and Development</h2>
-      <p>Understanding you seems to be complicated but it's a lovely simple riddle.</p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
-
-    </div>
-
-
-    <div class="quotes_box">
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>My Second Half</h2>
-      <p>The more I know you, the more I trust you with from the bottom of my heart</p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
-
-    </div>
-
-
-    <div class="quotes_box">
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>Award Winner</h2>
-      <p>Best Boyfriend Award goes to Coco MTK! Yayy!!
-        <br />
-        Thank you for your gentleness, love, kindness and care. Coco is a superman
-        for baby.
-      </p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
-
-    </div>
-
-
-    <div class="quotes_box">
-      <p>
-        <img src="img/left-quotes-sign.png" width="30px" style="opacity: 0.8;" />
-      <h2>Hamburger Motivation</h2>
-      <p>Success = a thing that can give you a hamburger everyday.<br />
-        (If you want to eat burger everyday, you must achieve your goals</p>
-      <img src="img/right-quotes-symbol.png" width="30px" style="opacity: 0.8;" />
-      </p>
-
-    </div>
   </div>
   <!-- Song and Quotes Section Ends-->
 
