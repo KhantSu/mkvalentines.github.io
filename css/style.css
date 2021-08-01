@@ -13,20 +13,16 @@ html, body {
   justify-content: center;
 }
 
+.fa-heart {
+  color: #ff0000;
+}
+
 h1 {
   letter-spacing: 0.2em;
   font-size: 2.8rem;
   text-align: center;
   font-family: 'PT Serif', serif;
   text-transform: uppercase;
-}
-
-.fa-heart {
-  color: #ff0000;
-}
-
-.self_info legend, .day_counter h1, .songs_header, .open_when h1, .gallery_h1 {
-  color: #d4af37;
 }
 
 /*****Sticky button*****/
@@ -57,7 +53,6 @@ h1 {
 .nav-link.active, .nav-link:hover {
   border-radius: 3px;
   transition: .2s;
-  /* box-shadow: 2px 2px 10px #7BA28F; */
   color: #D4AF37 !important;
 }
 
@@ -65,7 +60,7 @@ h1 {
 
 .banner {
   height: 750px;
-  background: url(../img/banner.jpg) no-repeat center;
+  background: url(../img/banner1.jpg) no-repeat center;
   background-size: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -123,6 +118,7 @@ fieldset {
 .self_info legend {
   font-size: 30px;
   letter-spacing: 0.1em;
+  color: #D4AF37;
   font-family: "PT Serif";
   text-align: center;
 }
@@ -139,6 +135,10 @@ fieldset {
   background: url(../img/bokeh.jpg) no-repeat center fixed;
   background-size: cover;
   text-align: center;
+}
+
+.day_counter h1 {
+  color: #D4AF37;
 }
 
 .counter_days, .counter_seconds {
@@ -169,6 +169,7 @@ fieldset {
 }
 
 .open_when h1 {
+  color: #D4AF37;
   letter-spacing: 0.1em;
   padding-bottom: 50px;
 }
@@ -412,8 +413,9 @@ fieldset {
 
 /*Songs and Quotes Section Starts*/
 
-.songs_header {
+.songs_container .songs_header {
   margin: 50px 0;
+  color: #D4AF37;
   padding-bottom: 50px;
 }
 
@@ -448,50 +450,27 @@ fieldset {
 
 /*****Gallery Section starts*****/
 
-.gallery_h1 {
+.gallery {
   margin: 50px 0;
 }
 
-.img-col img {
+.gallery_h1 {
+  color: #D4AF37;
+  margin: 50px 0;
+}
+
+.img-col-wrapper {
+  margin: auto;
+}
+
+.img-col {
   width: 100%;
-  margin: 5%;
   border-radius: 15px;
-  box-shadow: 2px 2px 10px #444;
+  box-shadow: 2px 2px 10px #7BA28F;
+  margin: 5%;
 }
 
-/* .gallery {
-  margin-top: 0px;
-  background: url(../img/bokeh.jpg) no-repeat center fixed;
-  background-size: cover;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  background-color: #eee;
-  display: flex;
-  padding-top: 50px;
-  position: absolute;
-  display: block;
-  margin-bottom: 600px;
-}
-
-@media(min-width: 320px) and (max-width: 600px) {
-  .gallery {
-    margin-bottom: 100%;
-  }
-}
-
-@media (min-width: 350px) and (max-width: 576px) {
-  .gallery_h1 {
-    font-size: 21px;
-  }
-}
-
-@media (min-width: 1150px) {
-  .gallery_h1 {
-    font-size: 40px;
-  }
-}
-
+/* 
 .image-gallery {
   display: grid;
   grid-template-columns: lfr lfr lfr lfr;
@@ -663,4 +642,13 @@ a.open:hover, a:hover a.open:active, a:active {
 .final .name {
   font-family: 'Parisienne', cursive;
   font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 1%;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
