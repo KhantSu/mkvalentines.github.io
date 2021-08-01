@@ -23,7 +23,7 @@ h1 {
 
 /*****Sticky button*****/
 
-.sticky_btn{
+.sticky_btn {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -448,47 +448,19 @@ fieldset {
 /*****Gallery Section starts*****/
 
 .gallery {
-  margin-top: 0px;
-  background: url(../img/bokeh.jpg) no-repeat center fixed;
-  background-size: cover;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  background-color: #eee;
-  display: flex;
-  padding-top: 50px;
-  position: absolute;
-  display: block;
-  margin-bottom: 600px;
-}
-
-@media(min-width: 320px) and (max-width: 600px) {
-  .gallery {
-    margin-bottom: 100%;
-  }
+  margin: 50px 0;
 }
 
 .gallery_h1 {
-  text-align: center;
-  padding: 20px 0;
-  font-family: 'PT Serif', serif;
-  text-transform: uppercase;
   color: #D4AF37;
-  letter-spacing: 0.1em;
+  margin: 50px 0;
 }
 
-@media (min-width: 350px) and (max-width: 576px) {
-  .gallery_h1 {
-    font-size: 21px;
-  }
+.img-col {
+  width: 100%;
 }
 
-@media (min-width: 1150px) {
-  .gallery_h1 {
-    font-size: 40px;
-  }
-}
-
+/* 
 .image-gallery {
   display: grid;
   grid-template-columns: lfr lfr lfr lfr;
@@ -603,7 +575,7 @@ fieldset {
     height: 30rem;
     min-height: 30rem;
   }
-}
+} */
 
 /*****Gallery section ends*****/
 
