@@ -13,6 +13,10 @@ html, body {
   justify-content: center;
 }
 
+.fa-heart {
+  color: #ff0000;
+}
+
 h1 {
   letter-spacing: 0.2em;
   font-size: 2.8rem;
@@ -455,6 +459,10 @@ fieldset {
   margin: 50px 0;
 }
 
+.img-col-wrapper {
+  margin: auto;
+}
+
 .img-col {
   width: 100%;
   border-radius: 15px;
@@ -634,4 +642,13 @@ a.open:hover, a:hover a.open:active, a:active {
 .final .name {
   font-family: 'Parisienne', cursive;
   font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 1%;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
