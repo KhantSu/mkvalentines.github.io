@@ -21,6 +21,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.self_info legend , .day_counter h1, .songs_header, .open_when h1, .gallery_h1{
+  color: #d4af37;
+}
+
 /*****Sticky button*****/
 
 .sticky_btn{
@@ -57,7 +61,7 @@ h1 {
 
 .banner {
   height: 750px;
-  background: url(../img/banner1.jpg) no-repeat center;
+  background: url(../img/banner.jpg) no-repeat center;
   background-size: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -115,7 +119,6 @@ fieldset {
 .self_info legend {
   font-size: 30px;
   letter-spacing: 0.1em;
-  color: #D4AF37;
   font-family: "PT Serif";
   text-align: center;
 }
@@ -132,10 +135,6 @@ fieldset {
   background: url(../img/bokeh.jpg) no-repeat center fixed;
   background-size: cover;
   text-align: center;
-}
-
-.day_counter h1 {
-  color: #D4AF37;
 }
 
 .counter_days, .counter_seconds {
@@ -166,7 +165,6 @@ fieldset {
 }
 
 .open_when h1 {
-  color: #D4AF37;
   letter-spacing: 0.1em;
   padding-bottom: 50px;
 }
@@ -410,9 +408,8 @@ fieldset {
 
 /*Songs and Quotes Section Starts*/
 
-.songs_container .songs_header {
+.songs_header {
   margin: 50px 0;
-  color: #D4AF37;
   padding-bottom: 50px;
 }
 
@@ -447,7 +444,18 @@ fieldset {
 
 /*****Gallery Section starts*****/
 
-.gallery {
+.gallery_h1 {
+  margin: 50px 0;
+}
+
+.img-col img{
+  width: 100%;
+  margin: 5%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #444;
+}
+
+/* .gallery {
   margin-top: 0px;
   background: url(../img/bokeh.jpg) no-repeat center fixed;
   background-size: cover;
@@ -466,15 +474,6 @@ fieldset {
   .gallery {
     margin-bottom: 100%;
   }
-}
-
-.gallery_h1 {
-  text-align: center;
-  padding: 20px 0;
-  font-family: 'PT Serif', serif;
-  text-transform: uppercase;
-  color: #D4AF37;
-  letter-spacing: 0.1em;
 }
 
 @media (min-width: 350px) and (max-width: 576px) {
@@ -603,7 +602,7 @@ fieldset {
     height: 30rem;
     min-height: 30rem;
   }
-}
+} */
 
 /*****Gallery section ends*****/
 
