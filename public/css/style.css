@@ -104,6 +104,10 @@ h1 {
   padding: 20px 0;
 }
 
+.photo img {
+  border-radius: 50%;
+}
+
 .person1, .person2 {
   font-family: 'Cabin';
 }
